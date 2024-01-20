@@ -3,8 +3,8 @@ from collections import deque
 N, M, V = map(int, sys.stdin.readline().split())
 
 graph = [[False] * (N + 1) for _ in range(N + 1)]
-for i in range(N+1):
-    a, b = map(int, sys.stdin.readline().split())
+for i in range(M):
+    a, b = map(int, input().split())
     graph[a][b] = True
     graph[b][a] = True
 
